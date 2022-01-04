@@ -59,6 +59,7 @@ public class IngredientController {
         IngredientCommand ingredientCommand = new IngredientCommand();
         model.addAttribute("ingredient", ingredientCommand);
 
+        ingredientCommand.setRecipeId(recipeId);
         //init uom
         ingredientCommand.setUom(new UnitOfMeasureCommand());
 
